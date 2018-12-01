@@ -1,4 +1,4 @@
-<div class="container-fluid row px-5 d-flex mt-5">
+<div class="container-fluid row px-5 d-flex mt-5 block-legal">
     <div class="col-8">
         {% for legal in block.legalContents.all() %}
             <h1 id="{{ legal.legalTitle | replace(' ', '') }}">{{ legal.legalTitle }}</h1>

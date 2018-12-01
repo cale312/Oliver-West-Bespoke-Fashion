@@ -1,22 +1,28 @@
-.side-nav {
+.page-legal {
 
-    position: absolute;
-    right: 0;
+    .block-legal {
+        .side-nav {
 
-    ul {
-        border-left: solid 3px $black;
-        height: 150px;
-        list-style: none;
-
-        a {
-            color: $black;
+            position: absolute;
+            right: 0;
+        
+            ul {
+                border-left: solid 3px $black;
+                height: 150px;
+                list-style: none;
+        
+                a {
+                    color: $black;
+                }
+            }
+        
+        }
+        
+        .fixed {
+            position: fixed;
+            right: 0;
+            top: 0;
         }
     }
 
-}
-
-.fixed {
-    position: fixed;
-    right: 0;
-    top: 0;
 }
