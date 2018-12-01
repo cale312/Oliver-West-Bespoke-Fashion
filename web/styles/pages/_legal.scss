@@ -1,0 +1,22 @@
+.side-nav {
+
+    position: absolute;
+    right: 0;
+
+    ul {
+        border-left: solid 3px $black;
+        height: 150px;
+        list-style: none;
+
+        a {
+            color: $black;
+        }
+    }
+
+}
+
+.fixed {
+    position: fixed;
+    right: 0;
+    top: 0;
+}

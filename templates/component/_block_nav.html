@@ -1,0 +1,24 @@
+<a href="http://localhost:8080/">
+    <h1 class="text-center lg-f mt-5 mb-2">Oliver West</h1>
+</a>
+<hr class="underline my-0">
+<nav class="navbar my-4">
+
+    <ul class="navbar-nav d-flex flex-row m-auto">
+
+        {% import "_macros.html" as macros %}
+
+        <li class="nav-item mx-4 pb-0">
+            <a class="nav-link {{ macros.is_active('women') }}" href="{{ url('for-women') }}" title="For Women">For Women</a>
+        </li>
+        <li class="nav-item mx-4 pb-0">
+            <a class="nav-link {{ macros.is_active('men') }}" href="{{ url('for-men') }}" title="For Men">For Men</a>
+        </li>
+        <li class="nav-item mx-4 pb-0">
+            <a class="nav-link {{ macros.is_active('accessories') }}" href="{{ url('accessories') }}" title="Accessories">Accessories</a>
+        </li>
+        <li class="nav-item mx-4 pb-0">
+            <a class="nav-link {{ macros.is_active('lookbook') }}" href="{{ url('lookbook') }}" title="Lookbook">Lookbook</a>
+        </li>
+    </ul>
+</nav>

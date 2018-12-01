@@ -1,0 +1,17 @@
+.block {
+
+	&-header {
+		
+	}
+
+	// top banner _block
+	&-top-banner {
+
+		background-color: $dark-grey;
+
+		a {
+			color: $black;
+		}
+	}
+
+}

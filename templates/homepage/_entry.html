@@ -1,0 +1,17 @@
+{% extends '_layout' %}
+
+{% block content %}
+
+	{% include 'component/_block_nav.html' %}
+
+    {% for block in entry.pageContents.all() %}
+    
+        {% if block.type == 'hero' %}
+        <!-- header -->
+        {% include 'homepage/_block_homehero.html' %}
+        <!-- ./header -->
+        {% endif %}
+
+    {% endfor %}
+
+{% endblock %}

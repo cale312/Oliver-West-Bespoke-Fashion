@@ -1,0 +1,25 @@
+{
+		"name": "2.0oliver-west",
+		"version": "1.0.0",
+		"description": "Bespoke Fashion Website",
+		"main": "index.js",
+		"scripts": {
+				"start": "npm run scss:watch",
+				"scss": "npm run scss:compilesourcemap && npm run scss:compilesourcemap -- -w & npm run livereload:web ",
+				"watch:craft": "onchange 'craft/templates/*' 'craft/templates/*/*' 'craft/templates/*/*/*' 'craft/templates/*/*/*/*' -v -- npm run livereload",
+				"scss:watch": "node-sass --watch web/styles -o web/styles",
+				"scss:compile": "node-sass web/styles/main.scss web/styles/main.css",
+				"scss:compilesourcemap": "node-sass web/styles/main.scss web/styles/main.css --source-map true  --output-style compressed",
+				"livereload:web": "livereload web/",
+				"livereload": "livereload . -e 'html, scss, css'",
+				"autoprefixer": "postcss -u autoprefixer -r web/styles/main.css",
+				"build:sass": "node-sass -r --output-style compressed src/style.scss -o dist",
+				"watch:sass": "npm run build:sass && npm run build:sass -- -w"
+		},
+		"author": "Zikisa Cale Sogaxa",
+		"license": "ISC",
+		"dependencies": {
+				"livereload": "^0.7.0",
+				"node-sass": "^4.10.0"
+		}
+}

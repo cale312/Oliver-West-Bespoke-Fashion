@@ -1,0 +1,15 @@
+// partials
+@import "partials/variables";
+@import "partials/typography";
+@import "partials/button";
+@import "partials/mixins";
+
+// components
+@import "components/nav";
+@import "components/blocks";
+@import "components/modals";
+@import "components/cards";
+
+// pages
+@import "pages/homepage";
+@import "pages/legal";

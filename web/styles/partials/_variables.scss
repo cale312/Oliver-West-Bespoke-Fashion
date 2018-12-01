@@ -1,0 +1,20 @@
+// colors
+$light-grey: #f1f1f1;
+$black: #4A4A4A;
+$dark: #222222;
+$grey: #E9E9E9;
+$light-grey: #F1F1F1;
+$white: #ffffff;
+$dark-grey: #D8D8D8;
+$maroon: #521A1A;
+$transparent: transparent;
+
+$base-line-height: 1.5;
+
+hr.underline {
+	height: 4px;
+    border: none;
+    width: 70px;
+    margin-bottom: 8px;
+    background-color: $black;
+}

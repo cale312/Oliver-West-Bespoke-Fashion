@@ -1,0 +1,47 @@
+input[type=button]:active,
+input[type=button]:focus {
+	outline: none;
+}
+
+.btn {
+
+	font-weight: 500;
+	font-family: "Copperplate";
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 18px;
+	padding-right: 18px;
+	border-radius: 2px;
+	cursor: pointer;
+	font-size: 15px;
+	transition-property: all;
+	transition-duration: .1s;
+	transition-timing-function: linear;
+	text-transform: uppercase;
+
+	&-dark {
+	    background-color: $maroon;
+	    border: solid 2px $maroon;
+	    color: $white;
+	}
+
+	&-dark:hover {
+	    color: $maroon;
+	    background-color: $transparent;
+	    border: solid 2px $maroon;
+	}
+
+	&-light {
+		color: $white;
+		background-color: $transparent;
+	    border: solid 2px $white;
+	}
+
+	&-light:hover {
+		color: $black;
+		background-color: $white;
+    	border: solid 2px $white;
+	}
+	
+
+}

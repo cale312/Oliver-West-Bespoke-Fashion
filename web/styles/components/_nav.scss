@@ -1,0 +1,16 @@
+.navbar {
+    width: 100%;
+
+    a {
+    	color: $black;
+    	transition-property: all;
+    	transition-timing-function: linear;
+    	transition-duration: .1s;
+    	border-bottom: solid 2px $transparent;
+    	line-height: 1;
+    }
+
+    a:hover {
+    	border-bottom: solid 2px $black;
+    }
+}
