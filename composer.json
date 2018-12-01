@@ -3,9 +3,7 @@
     "craftcms/cms": "^3.0.0",
     "vlucas/phpdotenv": "^2.4.0",
     "craftcms/redactor": "2.1.6",
-    "craftcms/contact-form": "2.2.3",
-    "ext-mbstring": "*",
-    "ext-imagick": "*"
+    "craftcms/contact-form": "2.2.3"
   },
   "autoload": {
     "psr-4": {
