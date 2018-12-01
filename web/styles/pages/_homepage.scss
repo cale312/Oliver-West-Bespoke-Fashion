@@ -1,0 +1,52 @@
+.page- {
+
+    .block {
+
+        &-we-offer {
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            .content {
+                background-color: $grey;
+                @include box-shadow($dark);
+            }
+
+            .section-image {
+                img {
+                    height: 250px;
+                }
+            }
+        }
+
+        &-product-preview {
+
+            height: 100%;
+
+            .product {
+                padding-top: 150px;
+                padding-bottom: 150px;
+                padding-left: 100px;
+                padding-right: 100px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                filter: grayscale(100%);
+                transition-duration: .5s;
+                border-radius: 5px;
+
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0 10px 20px -5px rgba(0,0,0,.3);
+                    transform: scale(1.01);
+                    filter: grayscale(0);
+                }
+
+                h1 {
+                    color: $white;
+                }
+            }
+        }
+
+    }
+
+}

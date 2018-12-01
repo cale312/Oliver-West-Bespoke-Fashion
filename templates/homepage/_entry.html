@@ -10,6 +10,22 @@
         <!-- header -->
         {% include 'homepage/_block_homehero.html' %}
         <!-- ./header -->
+        {% elseif block.type == 'ourStyle' %}
+        <!-- our_style -->
+        {% include 'homepage/_block_our_style.html' %}
+        <!-- ./our_style -->
+        {% elseif block.type == 'weOffer' %}
+        <!-- we_offer -->
+        {% include 'homepage/_block_we_offer.html' %}
+        <!-- ./we_offer -->
+        {% elseif block.type == 'quote' %}
+        <!-- quote -->
+        {% include 'homepage/_block_quote.html' %}
+        <!-- ./quote -->
+        {% elseif block.type == 'productImages' %}
+        <!-- product_images_preview -->
+        {% include 'homepage/_block_product_review.html' %}
+        <!-- ./product_images_preview -->
         {% endif %}
 
     {% endfor %}

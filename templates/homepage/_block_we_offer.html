@@ -1,0 +1,13 @@
+<div class="text-center mt-120 mb-120 py-5 block-we-offer" style="background-image: url('{{ block.sectionBackgroundImage.one.url }}');">
+	<div class="container d-flex my-5 py-4">
+        <div class="col section-image">
+            {% if block.sectionImage is not empty %}
+            <img src="{{ block.sectionImage.one.url }}" alt="">
+            {% endif %}
+        </div>
+        <div class="col content p-4">
+            {{ block.weOfferContent }}
+            <input class="mt-4 btn btn-dark btn-lg" type="button" value="Shop Now" name="">
+        </div>
+    </div>
+</div>
