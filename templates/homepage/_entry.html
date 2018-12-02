@@ -2,8 +2,6 @@
 
 {% block content %}
 
-	{% include 'component/_block_nav.html' %}
-
     {% for block in entry.pageContents.all() %}
     
         {% if block.type == 'hero' %}
@@ -22,7 +20,7 @@
         <!-- quote -->
         {% include 'homepage/_block_quote.html' %}
         <!-- ./quote -->
-        {% elseif block.type == 'productImages' %}
+        {% elseif block.type == 'productPreviews' %}
         <!-- product_images_preview -->
         {% include 'homepage/_block_product_review.html' %}
         <!-- ./product_images_preview -->

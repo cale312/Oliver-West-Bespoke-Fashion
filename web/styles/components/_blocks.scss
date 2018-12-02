@@ -1,9 +1,5 @@
 .block {
 
-	&-header {
-		
-	}
-
 	// top banner _block
 	&-top-banner {
 
@@ -12,6 +8,9 @@
 		a {
 			color: $black;
 		}
+	}
+
+	&-footer {
 	}
 
 }

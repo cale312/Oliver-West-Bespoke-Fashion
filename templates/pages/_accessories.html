@@ -1,0 +1,16 @@
+
+{% extends '_layout' %}
+{% block content %}
+ 
+{% for block in entry.pageContents.all() %} {% if block.type == 'products' %} {% set products = block.products.all() %} {% endif %}
+ 
+    <div class="container row mt-5 justify-content-center block-products ml-auto mr-auto">
+        {% for product in products %}
+            <div class="text-center m-3 col">
+                <img src="{{ product.productImage.one.url }}" height="300">
+                <p class="mt-2">{{ product.productTitle }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endfor %} {% endblock %}

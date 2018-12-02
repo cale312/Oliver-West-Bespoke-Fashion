@@ -1,0 +1,33 @@
+{% extends "_layout" %} {% block content %}
+
+{% for block in entry.pageContents.all() %} {% if block.type == 'legal' %}
+
+    <div class="container-fluid row px-5 d-flex mt-5 block-legal">
+	    <div class="col-8">
+	        {% for legal in block.legalContents.all() %}
+	            <h1 id="{{ legal.legalTitle | replace(' ', '') }}">{{ legal.legalTitle }}</h1>
+	            <p>{{ legal.legalBody }}</p>
+	            <hr>
+	        {% endfor %}
+	        <h1 class="mb-1" id="faqs">FAQs</h1>
+	        {% for faq in block.faqs.all() %}
+	            <h1 id="{{ faq.question | replace(' ', '') }}">{{ faq.question }}</h1>
+	            <p>{{ faq.answer }}</p>
+	            <br>
+	        {% endfor %}
+	    </div>
+	    <div class="pt-5 col-4 side-nav">
+	        <ul>
+	            {% for block in block.legalContents.all() %}
+	            <li>
+	                <a href="#{{ block.legalTitle | replace(' ', '') }}">{{ block.legalTitle }}</a>
+	            </li>
+	            {% endfor %}
+	            <li>
+	                <a href="#faqs">FAQs</a>
+	            </li>
+	        </ul>
+	    </div>
+	</div>
+
+{% endif %} {% endfor %} {% endblock %}
