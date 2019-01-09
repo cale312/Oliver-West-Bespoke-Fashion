@@ -1,8 +1,10 @@
+{% set params = { section: 'products', order: 'productTitle desc', limit: 3} %}
+{% set products = craft.entries(params) %}
 <div class="container text-center mt-120 mb-120 block-product-preview">
     <div class="d-flex justify-content-center">
-        {% for block in block.productPreviews.limit(3) %}
-            <a href="#" class="product mx-2" style="background-image: url('{{ block.productImage.one.url }}')">
-                <h1>{{ block.productTitle }}</h1>
+        {% for product in products %}
+            <a href="#" class="product mx-2" style="background-image: url('{{ product.productImage.one.url }}')">
+                <h1>{{ product.productTitle }}</h1>
             </a>
         {% endfor %}
     </div>

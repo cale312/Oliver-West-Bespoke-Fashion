@@ -20,12 +20,11 @@
         <!-- quote -->
         {% include 'homepage/_block_quote.html' %}
         <!-- ./quote -->
-        {% elseif block.type == 'productPreviews' %}
-        <!-- product_images_preview -->
-        {% include 'homepage/_block_product_review.html' %}
-        <!-- ./product_images_preview -->
         {% endif %}
 
     {% endfor %}
+     <!-- product_images_preview -->
+    {% include 'homepage/_block_product_review.html' %}
+    <!-- ./product_images_preview -->
 
 {% endblock %}
